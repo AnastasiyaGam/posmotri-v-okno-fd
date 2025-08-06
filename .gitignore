@@ -8,7 +8,13 @@ dist/
 *.log
 .env
 
-# Исключаем настройки редактора и форматтеров
+# Локальные настройки (только для меня)
 .editorconfig
 .prettierrc
 .prettierignore
+stylelint.config.js
+package-lock.json
+
+# Тестовые файлы (если не нужны в репозитории)
+test-file.html
+test-file.css
