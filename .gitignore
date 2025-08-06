@@ -1,0 +1,14 @@
+# Папки
+.vscode/
+node_modules/
+dist/
+
+# Файлы
+.DS_Store
+*.log
+.env
+
+# Исключаем настройки редактора и форматтеров
+.editorconfig
+.prettierrc
+.prettierignore
