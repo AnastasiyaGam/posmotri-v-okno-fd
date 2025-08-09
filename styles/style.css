@@ -15,12 +15,11 @@ html {
   justify-content: center; /* Центрируем по горизонтали */
   align-items: center; /* Центрируем по вертикали */
   margin: auto;
-  padding-left: 2px;
-  padding-bottom: 150px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  font-weight: 400;
 }
 
 h1,
@@ -80,8 +79,7 @@ ol {
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
-  gap: 20px;
-  padding-bottom: 8px;
+  gap: 26px;
 }
 
 .title {
@@ -98,6 +96,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto; /* Скролл при переполнении */
@@ -108,7 +107,7 @@ ol {
 .content__list {
   display: flex; /* Чтобы расположить элементы списка */
   flex-direction: column; /* Элементы располагаются вертикально, в колонку */
-  gap: 24px; /* Отступ между карточками */
+  gap: 30px; /* Отступ между карточками */
   width: 100%;
   margin: 0; /* Убираем стандартные внешние отступы списка */
   padding: 0; /* Убираем стандартные внутренние отступы списка */
@@ -116,14 +115,13 @@ ol {
 
 .content__list-item {
   margin: 0;
-  padding: 3px;
+  padding: 0 3px;
 }
 
 .content__video-card {
   display: flex; /* Располагаем элементы в строку */
   flex-direction: row;
   align-items: flex-start; /* Прижимаем к верхнему краю */
-  gap: 6px;
 }
 
 .content__video-card-description-container {
@@ -156,9 +154,10 @@ ol {
   -webkit-box-orient: vertical;
   line-clamp: 4;
   overflow: hidden;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   line-height: 16.2px;
+  font-weight: inherit;
 }
 
 .search-form {
@@ -180,10 +179,11 @@ ol {
 
 .search-form__fieldset-title {
   margin-bottom: 5px; /* Отступ снизу */
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400; /* Обычное начертание (толщина шрифта) */
-  font-size: 18px; /* Размер шрифта */
-  line-height: normal; /* Значение высоты строки (интерлиньяжа) */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 .search-form__checkbox-list {
@@ -192,16 +192,18 @@ ol {
 }
 
 .search-form__textfield {
-  padding: 2px 0; /* Отступы внутри поля */
+  padding: 1px 0; /* Отступы внутри поля */
   border: none; /* Убираем стандартные границы */
-  color: #fff; /* Цвет текста */
   border-top: 1px solid currentColor; /* Верхняя граница */
   border-bottom: 1px solid currentColor; /* Нижняя граница */
-  font-family: 'Fira Sans Condensed', sans-serif; /* Наследуем шрифт */
-  font-size: 18px; /* Размер шрифта */
   background-color: transparent;
   inline-size: 225px; /* Минимальная ширина */
   appearance: none; /* Убираем браузерные стили */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-weight: inherit;
 }
 
 .search-form__textfield::placeholder {
@@ -240,14 +242,16 @@ ol {
 .button {
   padding: 0; /* Сброс стандартных отступов */
   border: 1px solid currentColor; /* Обводка */
-  color: #fff; /* Цвет текста*/
-  font-family: 'Fira Sans Condensed', sans-serif; /* Шрифт */
-  font-weight: 700; /* Жирное начертание */
-  font-size: 18px; /* Размер шрифта */
   text-align: center; /* Горизонтальное выравнивание текста по центру родительского элемента */
   background-color: transparent; /* Фон прозрачный */
   cursor: pointer; /* Курсор указывает на возможность взаимодействия */
   appearance: none; /* Убираем браузерные стили */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .search-form__submit-button {
@@ -259,6 +263,7 @@ ol {
 .more-button {
   min-height: 34px; /* Высота */
   inline-size: 100%; /* Растягиваем на всю ширину */
+  margin-right: 2px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
